@@ -1,0 +1,10 @@
+num = int(input("Digite um número: "))
+
+fibonacci = [0, 1]  # inicia a sequência de Fibonacci com 0 e 1
+while fibonacci[-1] < num:  # calcula a sequência até que o último número seja maior que num
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
+
+if num in fibonacci:
+    print(f"O número {num} faz parte da sequência de Fibonacci!")
+else:
+    print(f"O número {num} não faz parte da sequência de Fibonacci.")
